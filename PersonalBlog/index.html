@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Nishree's Blog</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#posts">Blog Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to My Blog</h2>
+      <p>Sharing my thoughts and experiences on web development, design, and life.</p>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+<section id="about" class="about-me">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <img src="img/background.jpg" alt="About Me">
+        <div class="text">
+          <p>Hello! I’m Sree Hari Praba, a web developer and designer passionate about building user-friendly websites. Follow my blog to learn about my journey, tips, and more!</p>
+          <a href="#contact" class="contact-link">Get in Touch</a>
+        </div>
+      </div>
+      <div class="skills">
+        <h3>Skills & Expertise</h3>
+        <ul>
+          <li>Web Development</li>
+          <li>Node Js & MongoDb</li>
+          <li>JavaScript & React</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="posts" class="blog-posts">
+    <div class="container">
+      <h2>Blog Posts</h2>
+  
+      <!-- Tab Navigation for Categories -->
+      <div class="tabs">
+        <button class="tab-link active" onclick="openCategory(event, 'food')">Food</button>
+        <button class="tab-link" onclick="openCategory(event, 'news')">News</button>
+        <button class="tab-link" onclick="openCategory(event, 'technology')">Technology</button>
+      </div>
+  
+      <!-- Food Section -->
+      <div id="food" class="tab-content">
+        <article class="post">
+          <a href="post/post1.html">
+            <img src="img/quinoa.jpg" alt="Food Blog Post 1">
+            <h3>The Best Vegan Recipes</h3>
+            <p>Explore a variety of delicious vegan recipes that are both healthy and easy to make at home.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post2.html">
+            <img src="img/healthyeating.jpg" alt="Food Blog Post 2">
+            <h3>5 Tips for Healthy Eating</h3>
+            <p>Learn how to maintain a balanced diet with these simple and practical tips for healthy eating.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post3.html">
+            <img src="img/superfoods.jpg" alt="Food Blog Post 3">
+            <h3>Top 10 Superfoods</h3>
+            <p>Discover the top 10 superfoods that can improve your overall health and wellness.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post4.html">
+            <img src="img/smoothies.jpg" alt="Food Blog Post 4">
+            <h3>Delicious Smoothie Recipes</h3>
+            <p>Try out these refreshing and nutritious smoothie recipes for a quick, healthy snack.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post5.html">
+            <img src="img/mealprepareideas.jpg" alt="Food Blog Post 5">
+            <h3>Meal Prep Ideas for Busy Weekdays</h3>
+            <p>Make your weekdays easier with these meal prep ideas that save time and keep you healthy.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post6.html">
+            <img src="img/seasonal.jpg" alt="Food Blog Post 6">
+            <h3>How to Cook with Seasonal Ingredients</h3>
+            <p>Learn how to cook delicious meals with fresh, seasonal ingredients all year round.</p>
+          </a>
+        </article>
+      </div>
+  
+      <!-- News Section -->
+      <div id="news" class="tab-content" style="display:none">
+        <article class="post">
+          <a href="post/post7.html">
+            <img src="img/latesttechnology.jpg" alt="News Blog Post 1">
+            <h3>Breaking News: Tech Advances in 2024</h3>
+            <p>Stay updated with the latest technological advancements and industry insights from 2024.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post8.html">
+            <img src="img/globaleconomy.jpg" alt="News Blog Post 2">
+            <h3>Global Economic Outlook</h3>
+            <p>A comprehensive overview of the global economic situation and predictions for the next year.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post9.html">
+            <img src="img/political.jpg" alt="News Blog Post 3">
+            <h3>Political Trends in 2024</h3>
+            <p>An analysis of emerging political trends and their potential impact on global policies.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post10.html">
+            <img src="img/environment.jpg" alt="News Blog Post 4">
+            <h3>Environmental Issues and Solutions</h3>
+            <p>Explore critical environmental issues and the innovative solutions being developed to address them.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post11.html">
+            <img src="img/sports.jpg" alt="News Blog Post 5">
+            <h3>Sports Highlights of the Year</h3>
+            <p>A review of the most exciting sports events and highlights from the past year.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post12.html">
+            <img src="img/healthcare.jpg" alt="News Blog Post 6">
+            <h3>Advances in Healthcare Technology</h3>
+            <p>Learn about the latest advances in healthcare technology and how they're changing the industry.</p>
+          </a>
+        </article>
+      </div>
+  
+      <!-- Technology Section -->
+      <div id="technology" class="tab-content" style="display:none">
+        <article class="post">
+          <a href="post/post13.html">
+            <img src="img/AI.jpg" alt="Tech Blog Post 1">
+            <h3>Understanding AI and Machine Learning</h3>
+            <p>Dive into the world of AI and learn about the latest advancements in machine learning technologies.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post14.html">
+            <img src="img/webdevelopment.jpg" alt="Tech Blog Post 2">
+            <h3>The Future of Web Development</h3>
+            <p>Discover emerging trends in web development that will shape the future of digital experiences.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post15.html">
+            <img src="img/crypto.jpg" alt="Tech Blog Post 3">
+            <h3>Blockchain Beyond Cryptocurrency</h3>
+            <p>Explore how blockchain technology is revolutionizing industries beyond just cryptocurrency.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post16.html">
+            <img src="img/programming.jpg" alt="Tech Blog Post 4">
+            <h3>Top Programming Languages in 2024</h3>
+            <p>A guide to the most popular programming languages and what makes them essential in 2024.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post17.html">
+            <img src="img/security.jpg" alt="Tech Blog Post 5">
+            <h3>Cybersecurity Trends to Watch</h3>
+            <p>Learn about the most important cybersecurity trends and how they protect organizations from attacks.</p>
+          </a>
+        </article>
+        <article class="post">
+          <a href="post/post18.html">
+            <img src="img/virtual reality.jpg" alt="Tech Blog Post 6">
+            <h3>Virtual Reality: The Next Frontier</h3>
+            <p>Discover how virtual reality is changing the way we experience the digital world.</p>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  
+ 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you have any questions, feel free to reach out!</p>
+      <form action="submit_form.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Nishree's Blog. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

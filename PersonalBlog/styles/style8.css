@@ -1,0 +1,141 @@
+/* General reset for margins, padding, and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Main Content Area */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Article Styles */
+  article h1 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  article p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  article h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+  }
+  
+  article ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  article ul li {
+    list-style-type: disc;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    header nav ul li a {
+      font-size: 16px;
+    }
+  
+    main {
+      padding: 15px;
+    }
+  
+    article h1 {
+      font-size: 30px;
+    }
+  
+    article h2 {
+      font-size: 24px;
+    }
+  
+    article p, article ul li {
+      font-size: 16px;
+    }
+  }
+  
