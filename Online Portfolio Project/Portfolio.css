@@ -65,49 +65,62 @@ h4{
     letter-spacing: 1px;
     font-size:20px;
 }
-.about{
-    width:100%;
-    padding:100px 0px;
+.about {
+    width: 100%;
+    padding: 60px 20px; /* Adjust padding as needed */
     background-color: #191919;
-}
-.about img{
-    height: auto;
-    width: 430px;
-}
-.about-text{
-    width: 550px;
-}
-.bio{
-    width:1130px;
-    max-width:95%;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center; /* Center-aligns the bio container */
 }
-.about-text h2{
+
+.bio {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    align-items: center;
+    max-width: 1200px; /* Set a max width for the container */
+    width: 100%; /* Ensure the container takes full width */
+    margin: 0 auto; /* Center-align the container */
+    padding: 20px;
+}
+
+.bio img {
+    max-width: 400px; /* Limit the image size */
+    width: 100%; /* Ensures image scales correctly */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.about-text {
+    flex: 1; /* Allows the text container to grow and shrink */
+    max-width: 600px; /* Limits the maximum width of the text container */
+}
+
+.about-text h2 {
     color: white;
     font-size: 75px;
     text-transform: capitalize;
-    margin-bottom : 20px
+    margin-bottom: 20px;
 }
-.about-text h5{
+
+.about-text h5 {
     color: white;
     letter-spacing: 1px;
     font-size: 22px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
-.about-text p{
+
+.about-text p {
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
-button{
+
+button {
     background-color: #f9004d;
-    color:white;
+    color: white;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
@@ -115,11 +128,13 @@ button{
     border-radius: 30px;
     transition: .4s;
 }
-button:hover{
+
+button:hover {
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+
 #skills {
     background-color: #1c1c1c;
     padding: 60px 0;
@@ -193,10 +208,10 @@ button:hover{
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 100%; 
+    margin: 0 auto; 
 }
 
 .project-card {
@@ -205,6 +220,7 @@ button:hover{
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    width: 100%; /* Ensure card takes full column width */
 }
 
 .project-card img {
@@ -216,11 +232,10 @@ button:hover{
 .project-info {
     padding: 20px;
     color: #fcfc;
-    font-size: 18px; 
-    line-height: 28px; 
-    letter-spacing: 1px; 
-    font-family: 'Josefin Sans', sans-serif;     
-    
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .project-info h3 {
@@ -236,6 +251,8 @@ button:hover{
 .project-card:hover {
     transform: translateY(-10px);
 }
+
+
 #resume {
     text-align: center;
     padding: 60px 0;
@@ -266,3 +283,87 @@ button:hover{
     cursor: pointer;
 }
 
+/* Contact Section */
+#contact {
+    background-color: #191919;
+    color: #fcfc;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #fcfc;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fcfc;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+button.cta-button {
+    background-color: #f9004d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.cta-button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    color: #f9004d;
+}
+
+/* Footer Section */
+footer {
+    background-color: #191919;
+    color: #fcfc;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0;
+} 

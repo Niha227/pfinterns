@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +7,25 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="Portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-
     <!-- Header Section -->
     <header>
         <div class="header-container">
             <nav>
                 <h2 class="logo">Portfolio</h2>
-                
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Details</a></li>
-
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Details</a></li>
                 </ul>
-                
             </nav>
             <div class="name">
                 <h4>Hello, my name is </h4>
@@ -33,20 +35,18 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        
-            <div class="bio">\
-                <img src="img/background.jpg">
+    <section id="about" class="about">
+        <div class="bio">
+            <img src="img/background.jpg" alt="About Me">
             <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Mern Stack Developer</h5>
-                <p>I am a creative web developer with a passion for creating good response and user-friendly website.I can provide clean code and pixel perfect designs.I can also make websites more interactive</p>
+                <p>I am a creative web developer with a passion for creating good response and user-friendly website. I can provide clean code and pixel-perfect designs. I can also make websites more interactive.</p>
                 <button type="button">Let's Talk</button>
             </div>
-               
-            </div>
+        </div>
     </section>
+    
 
     <!-- Skills Section -->
     <section id="skills">
@@ -70,37 +70,94 @@
                     <div class="progress" style="width: 75%;">75%</div>
                 </div>
             </div>
-            <!-- Add more skill items with appropriate percentages -->
+
+            <div class="skill-item">
+                <h3>React Js</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <h3>Node Js</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <h3>MongoDB</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;">90%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <h3>GitHub</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            
         </div>
     </section>
-    
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
-                <img src="img/placement management.jpg" alt="Placement project">
-                <div class="project-info">
-                    <h3>College Placement Management</h3>
-                    <p>The Placement Management System is a comprehensive web application built to simplify the campus recruitment process. The system provides separate portals for administrators, students, and recruiters, enabling efficient management of job postings, student applications, and interview schedules. Developed using React.js on the frontend and Node.js with MongoDB on the backend, the system allows students to register , while recruiters can filter candidates and manage interviews effortlessly. The platform automates many manual tasks, enhancing the efficiency of the placement process and providing real-time updates to all users.</p>
+            <!-- College Placement Management Project -->
+            <a href="https://github.com/Niha227/PlacementManagement-BackEnd" target="_blank">
+                <div class="project-card">
+                    <img src="img/placement management.jpg" alt="Placement project">
+                    <div class="project-info">
+                        <h3>College Placement Management</h3>
+                        <p>The Placement Management System is a comprehensive web application built to simplify the campus recruitment process. The system provides separate portals for administrators, students, and recruiters, enabling efficient management of job postings, student applications, and interview schedules. Developed using React.js on the frontend and Node.js with MongoDB on the backend, the system allows students to register, while recruiters can filter candidates and manage interviews effortlessly. The platform automates many manual tasks, enhancing the efficiency of the placement process and providing real-time updates to all users.</p>
+                    </div>
                 </div>
-            </div>
-             <div class="project-card">
-                <img src="img/calci.jpg" alt="calculator">
-                <div class="project-info">
-                    <h3>Calculator</h3>
-                    <p>Developed a responsive, web-based calculator using HTML, CSS, and JavaScript. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division. Implemented real-time input display and dynamic calculation handling through JavaScript event listeners and DOM manipulation.</p>
+            </a>
+    
+            <!-- Calculator Project -->
+            <a href="https://github.com/Niha227/pfinterns/tree/main/Calculator" target="_blank">
+                <div class="project-card">
+                    <img src="img/calci.jpg" alt="calculator">
+                    <div class="project-info">
+                        <h3>Calculator</h3>
+                        <p>Developed a responsive, web-based calculator using HTML, CSS, and JavaScript. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division. Implemented real-time input display and dynamic calculation handling through JavaScript event listeners and DOM manipulation</p>
+                    </div>
                 </div>
-             </div>
-        </div>
+            </a>
+    
+            <!-- Personal Blog Project -->
+            <a href="https://github.com/Niha227/pfinterns/tree/main/PersonalBlog" target="_blank">
+                <div class="project-card">
+                    <img src="img/blog.jpg" alt="Personal Blog">
+                    <div class="project-info">
+                        <h3>Personal Blog</h3>
+                        <p>Designed and developed a responsive blog website using HTML, CSS, and JavaScript to share thoughts and experiences. The website includes key sections such as blog posts, an 'About Me' page, and contact information. HTML is used for structuring content, CSS for styling and layout design, and basic JavaScript for interactivity, such as a dynamic navigation menu and responsive elements. The blog is optimized for various screen sizes to ensure a seamless experience across devices.</p>
+                    </div>
+                </div>
+            </a>
+    
+            <!-- Task Management Project -->
+            <a href="https://github.com/Niha227/pfinterns/tree/main/Taskapplication" target="_blank">
+                <div class="project-card">
+                    <img src="img/Task Management.jpg" alt="Task Management">
+                    <div class="project-info">
+                        <h3>Task Management</h3>
+                        <p>Developed a web-based task management application using HTML, CSS, and JavaScript to organize and track daily tasks. Features include adding, editing, and deleting tasks, marking tasks as completed, and filtering tasks by status. The project focuses on responsive design and client-side data storage using localStorage for persistent task management.</p>
+                    </div>
+                </div>
+            </a>
+          </div>
     </section>
 
+    <!-- Resume Section -->
     <section id="resume">
         <h2>Download My Resume</h2>
-        <a href="resume.pdf" download class="resume-download-button">Download Resume</a>
+        <a href="./Resume/My Resume.pdf" download class="resume-download-button">Download Resume</a>
+       
     </section>
-    
 
     <!-- Contact Section -->
     <section id="contact">
@@ -126,7 +183,5 @@
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
-
