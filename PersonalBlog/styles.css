@@ -69,22 +69,22 @@
   }
 /* Hero Section */
 .hero {
-    background-image: url('../img/BloggerBackground.jpg'); /* Path to your background image */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    color: #fff; /* Text color */
+    background-image: url('../img/BloggerBackground.jpg'); 
+    background-size: cover; /
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #fff; 
     padding: 60px 20px; /* Padding for top and bottom */
-    text-align: center; /* Center-align the text */
+    text-align: center; 
   }
   
   .hero h2 {
-    font-size: 3em; /* Adjust as needed */
+    font-size: 3em; 
     margin: 0;
   }
   
   .hero p {
-    font-size: 1.5em; /* Adjust as needed */
+    font-size: 1.5em; 
     margin-top: 10px;
   }
   

@@ -9,7 +9,7 @@
     width: 100%;
     background-image: url('../img/background.jpg');
     background-size: cover; /* Ensures the image covers the entire section */
-    background-position: right center ; /* Centers the image */
+    background-position: right center ; 
 }
 nav{
     display: flex;
@@ -67,32 +67,32 @@ h4{
 }
 .about {
     width: 100%;
-    padding: 60px 20px; /* Adjust padding as needed */
+    padding: 60px 20px; /* Adjusted padding as needed */
     background-color: #191919;
     display: flex;
-    justify-content: center; /* Center-aligns the bio container */
+    justify-content: center; 
 }
 
 .bio {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap; 
     align-items: center;
-    max-width: 1200px; /* Set a max width for the container */
-    width: 100%; /* Ensure the container takes full width */
-    margin: 0 auto; /* Center-align the container */
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
     padding: 20px;
 }
 
 .bio img {
-    max-width: 400px; /* Limit the image size */
-    width: 100%; /* Ensures image scales correctly */
-    height: auto; /* Maintains aspect ratio */
-    margin-right: 20px; /* Space between image and text */
+    max-width: 400px; 
+    width: 100%; 
+    height: auto; 
+    margin-right: 20px; 
 }
 
 .about-text {
-    flex: 1; /* Allows the text container to grow and shrink */
-    max-width: 600px; /* Limits the maximum width of the text container */
+    flex: 1; 
+    max-width: 600px; 
 }
 
 .about-text h2 {
@@ -186,7 +186,7 @@ button:hover {
     padding-right: 10px;
     color: white;
     font-weight: bold;
-    line-height: 30px; /* Align text vertically */
+    line-height: 30px; /* Aligns text vertically */
     transition: width 0.5s ease-in-out;
 }
 
@@ -220,7 +220,7 @@ button:hover {
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-    width: 100%; /* Ensure card takes full column width */
+    width: 100%; /* Ensures card takes full column width */
 }
 
 .project-card img {
@@ -331,7 +331,7 @@ form {
 
 .form-group textarea {
     height: 150px;
-    resize: vertical; /* Allows vertical resizing of the textarea */
+    resize: vertical; 
 }
 
 button.cta-button {
