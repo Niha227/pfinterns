@@ -218,12 +218,13 @@
     <div class="container">
       <h2>Contact Me</h2>
       <p>If you have any questions, feel free to reach out!</p>
-      <form action="submit_form.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+      <div id="formMessage"></div> <!-- For displaying a confirmation message -->
     </div>
   </section>
 

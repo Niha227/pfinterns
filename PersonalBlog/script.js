@@ -19,31 +19,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// contact form
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the default form submission
-
- 
-  const formData = new FormData(this);
-
-  fetch('https://formspree.io/f/your-form-id', {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
-      alert('Thank you for your message!');
-      this.reset();
-    } else {
-      alert('There was a problem with your submission. Please try again.');
-    }
-  })
-  .catch(error => {
-    console.error('Error:', error);
-    alert('There was a problem with your submission. Please try again.');
-  });
-});
